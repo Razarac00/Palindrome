@@ -19,8 +19,6 @@ namespace Palindrome.Logic
 
         public bool CheckString(string stringToCheck)
         {
-            int size = stringToCheck.Length;
-
             string loweredString = formatSentence(stringToCheck);
             
             return reverseSentence(loweredString).Equals(loweredString);
