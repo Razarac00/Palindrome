@@ -1,5 +1,6 @@
 ﻿using System;
 using Palindrome.Logic;
+using System.Collections.Generic;
 
 namespace Palindrome.IO
 {
@@ -20,7 +21,21 @@ namespace Palindrome.IO
         private static void MessWithPalindromeChecker() 
         {
             PalindromeChecker PC = new PalindromeChecker();
-            Console.WriteLine(PC.CheckString("anna"));
+            List<string> TestThese = new List<string> {"anna", "Anna", "aNnA", "girafarig"};
+
+            TestThese.Add("greg"); 
+            TestThese.Add("the dishwasher"); 
+            TestThese.Add("put that down");
+
+            foreach (string sentence in TestThese)
+            {
+                Console.WriteLine(PC.CheckString(sentence));
+            }
+
+
+
+
+            
         }
     }
 }
