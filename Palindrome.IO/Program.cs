@@ -8,16 +8,10 @@ namespace Palindrome.IO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
 
             MessWithPalindromeChecker();
         }
 
-        /**
-        a palindrome is a word or sentence that read forward or backward result in the same word or sentence. example: civic, anana, never odd or even.
-        write a solution that given an input can determine if it is a palindrome or not.
-        you are open to use notes and online resources, except each other.
-         */
         private static void MessWithPalindromeChecker() 
         {
             PalindromeChecker PC = new PalindromeChecker();
@@ -26,6 +20,9 @@ namespace Palindrome.IO
             TestThese.Add("greg"); 
             TestThese.Add("the dishwasher"); 
             TestThese.Add("put that down");
+            TestThese.Add("");
+            TestThese.Add("ciViC duty Ytud ciVIC");
+
 
             foreach (string sentence in TestThese)
             {

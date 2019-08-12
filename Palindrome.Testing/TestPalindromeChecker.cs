@@ -6,8 +6,22 @@ namespace Palindrome.Testing
 {
     public class TestPalindromeChecker
     {
+
         [Fact]
-        public void TestCheckStringBasic()
+        public void TestCheckTrueNullString()
+        {
+            // arrange
+            var PC = new PalindromeChecker();
+            var expected = true; 
+            // act
+            var actual = PC.CheckString("");
+
+            // assert
+            Assert.True(expected == actual);
+        }
+
+        [Fact]
+        public void TestCheckStringTrueBasic()
         {
             // arrange
             var PC = new PalindromeChecker();
