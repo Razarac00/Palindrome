@@ -59,7 +59,7 @@ namespace Palindrome.Testing
             Assert.True(expected == actual);
         }
 
-                [Fact]
+        [Fact]
         public void TestCheckStringFalseAdvanced()
         {
             // arrange
@@ -72,6 +72,18 @@ namespace Palindrome.Testing
             Assert.False(expected == actual);
         }
 
+        [Fact]
+        public void TestCheckStringFalseWhiteSpace()
+        {
+            // arrange
+            var PC = new PalindromeChecker();
+            var expected = true; 
+            // act
+            var actual = PC.CheckString("  1 ");
+
+            // assert
+            Assert.False(expected == actual);
+        }
 
     }
 }

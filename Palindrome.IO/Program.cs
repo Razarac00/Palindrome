@@ -22,6 +22,8 @@ namespace Palindrome.IO
             TestThese.Add("put that down");
             TestThese.Add("");
             TestThese.Add("ciViC duty Ytud ciVIC");
+            TestThese.Add("   0   ");
+            TestThese.Add("  1 ");
 
 
             foreach (string sentence in TestThese)
