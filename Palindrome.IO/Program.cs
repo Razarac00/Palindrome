@@ -1,4 +1,5 @@
 ﻿using System;
+using Palindrome.Logic;
 
 namespace Palindrome.IO
 {
@@ -7,6 +8,8 @@ namespace Palindrome.IO
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            MessWithPalindromeChecker();
         }
 
         /**
@@ -14,5 +17,10 @@ namespace Palindrome.IO
         write a solution that given an input can determine if it is a palindrome or not.
         you are open to use notes and online resources, except each other.
          */
+        private static void MessWithPalindromeChecker() 
+        {
+            PalindromeChecker PC = new PalindromeChecker();
+            Console.WriteLine(PC.CheckString("anna"));
+        }
     }
 }
